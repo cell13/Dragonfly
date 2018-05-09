@@ -3,7 +3,7 @@
 本指南给开发者提供了从源码构建和运行超级节点的操作命令。建议在同一机房或集群内至少有2台8核16G且千兆网络的机器用于部署超级节点。
 
 本文中提供了两种方式来安装超级节点:
-* Docker部署： 本地快速部署测试。
+* Docker部署：本地快速部署测试。
 * 物理机部署：建议生产环境使用。
 
 ## 1. 环境配置
@@ -72,7 +72,7 @@ git clone https://github.com/alibaba/Dragonfly.git
   - 将war包拷贝到tomcat目录
 
     ```sh
-    copy target/supernode.war ${CATALINA_HOME}/webapps/supernode.war
+    cp target/supernode.war ${CATALINA_HOME}/webapps/supernode.war
     ```
   - 更改tomcat的context配置
 
